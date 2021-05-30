@@ -8,7 +8,7 @@ En el siguiente trabajo se hizo el uso de SQLite para la creación de la BD y SQ
 
 Primeramente se identifico que datos existen en la ***data***
 
-![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/0.png)
+![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/0.png)
 
 Y una vez analisados se concluyo que existen ***4*** entidades y los datos que corresponden a cada una son:
 
@@ -18,7 +18,7 @@ Y una vez analisados se concluyo que existen ***4*** entidades y los datos que c
 
 	### Creación de tabla Provincia
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/1.png) 
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/1.png) 
 
 * Canton:
 	* Código División Política Administrativa  Cantón
@@ -27,7 +27,7 @@ Y una vez analisados se concluyo que existen ***4*** entidades y los datos que c
 	### Creación de tabla Canton
 	* Aparte de los dos datos de Canton, se agrega el dato provincia_id por la relacion entre tablas
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/2.png) 
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/2.png) 
 
 * Parroquia:
 	* Código División Política Administrativa  Parroquia
@@ -36,7 +36,7 @@ Y una vez analisados se concluyo que existen ***4*** entidades y los datos que c
 	### Creación de tabla Parroquia
 	* Aparte de los dos datos de Parroquia, se agrega el dato canton_id por la relacion entre tablas
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/3.png)
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/3.png)
 
 * Establecimiento
 	* Código AMIE
@@ -53,7 +53,7 @@ Y una vez analisados se concluyo que existen ***4*** entidades y los datos que c
 	### Creación de tabla Establecimiento
 	* Aparte de los diez datos de Parroquia, se agrega el dato parroquia_id por la relacion entre tablas
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/4.png)
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/4.png)
 
 Por otra parte para el ingreso de los datos en cada entidad creada, primeramente se leyó el archivo ***Listado-Instituciones-Educativas.csv*** y para el ingreso de los datos a la entidad solo se saco del archivo los datos que le corresponden a la entidad y que sean datos unicos, a exepción para las entidades Canton, Parroquia y Establecimiento ya que para ellos también se saco el codigo que corresponde para la relacion de tablas (FK).
 
@@ -61,19 +61,19 @@ A continuación se muestra como se ingreso los datos a cada entidad:
 
 * Provincia:
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/5.png)
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/5.png)
 
 * canton:
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/6.png)
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/6.png)
 
 * Parroquia:
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/7.png)
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/7.png)
 
 * Establecimiento:
 
-	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/tree/main/img/8.png)
+	![](https://github.com/PlataformasWeb-P-AA2021/trabajo-final-1bim-Jdesparza/blob/main/img/8.png)
 
 Y ya una vez que se tuvo ingresados los datos a cada tabla se procedio a realizar las consultas especificadas.
 
