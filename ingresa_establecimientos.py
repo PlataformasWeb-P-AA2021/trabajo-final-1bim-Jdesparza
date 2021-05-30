@@ -24,8 +24,9 @@ archivo = open('data/Listado-Instituciones-Educativas.csv', 'r', encoding='utf-8
 lineas = archivo.readlines()
 lineas = lineas[1:]
 lineas = [l.split("|") for l in lineas]
+#se sacan los datos de la entidad y el codigo de la parroquia para la relacion entre tablas
 lineas = [(l[6], l[0], l[1], l[8], l[9], l[10], l[11], l[12], l[13], l[14], l[15]) for l in lineas]
-establecimientos = list(set(lineas))
+establecimientos = list(set(lineas)) #datos Unicos
 
 for linea in establecimientos:
     #print(linea)

@@ -23,8 +23,8 @@ archivo = open('data/Listado-Instituciones-Educativas.csv', 'r', encoding='utf-8
 lineas = archivo.readlines()
 lineas = lineas[1:]
 lineas = [l.split("|") for l in lineas]
-lineas = [(l[2], l[3]) for l in lineas]
-provincias = list(set(lineas))
+lineas = [(l[2], l[3]) for l in lineas]  #se sacan los datos de la entidad
+provincias = list(set(lineas)) #datos Unicos
 
 for linea in provincias:
     #print(linea)

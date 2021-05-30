@@ -24,8 +24,9 @@ archivo = open('data/Listado-Instituciones-Educativas.csv', 'r', encoding='utf-8
 lineas = archivo.readlines()
 lineas = lineas[1:]
 lineas = [l.split("|") for l in lineas]
+#se sacan los datos de la entidad y el codigo de la Provincia para la relacion entre tablas
 lineas = [(l[2], l[4], l[5]) for l in lineas]
-cantones = list(set(lineas))
+cantones = list(set(lineas)) #datos Unicos
 
 for linea in cantones:
     #print(linea)
